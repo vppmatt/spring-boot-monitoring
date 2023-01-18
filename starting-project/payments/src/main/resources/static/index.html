@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payments application</title>
+</head>
+<body>
+<h1>Payments - sample application</h1>
+<p>This application is a sample Spring Boot Rest application. It contains a list of payments made for orders for a service such
+    as an insurnace policy or an entertainment subscription. Each order can have multiple payments (e.g. some orders
+    are paid for monthly, others as single payments). </p>
+<h2>Instructions</h2>
+<p>Get requests can be issued as follows:</p>
+<p><strong>http://localhost:8080/api/payments</strong> - retrieves the first 100 records</p>
+<p><strong>http://localhost:8080/api/payments?country=swe</strong> - retrieves all records for the specified country (warning could be slow if there is a lot of data!)</p>
+<p><strong>http://localhost:8080/api/payments?order=21213379</strong> - retrieves all records for the specified order</p>
+<p><strong>http://localhost:8080/api/payments/82</strong> - retrieves the specific record</p>
+<p><strong>http://localhost:8080/api/country</strong> - retrieves a list of all countries in the system</p>
+<p>View the swagger documentation <a href="/swagger-ui.html">here</a>.</p>
+</body>
+</html>
