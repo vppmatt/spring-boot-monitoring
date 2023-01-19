@@ -238,3 +238,106 @@ Unconditional classes:
 2023-01-19 11:05:29.053  INFO 466520 --- [RMI TCP Connection(1)-192.168.3.59] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-01-19 11:05:29.053  INFO 466520 --- [RMI TCP Connection(1)-192.168.3.59] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-01-19 11:05:29.055  INFO 466520 --- [RMI TCP Connection(1)-192.168.3.59] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-01-19 11:08:46.309  INFO 466520 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 14 class path changes (0 additions, 0 deletions, 14 modifications)
+2023-01-19 11:08:46.322  INFO 466520 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-19 11:08:46.324  INFO 466520 --- [Thread-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-01-19 11:08:46.329  INFO 466520 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-19 11:08:46.451  INFO 463304 --- [main] c.m.payments.PaymentsApplicationTests    : Starting PaymentsApplicationTests using Java 1.8.0_345 on Multicode-O4 with PID 463304 (started by mthor in C:\gitrepositories\neueda\spring-boot-monitoring\completed-project\payments)
+2023-01-19 11:08:46.473  INFO 463304 --- [main] c.m.payments.PaymentsApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2023-01-19 11:08:46.549  WARN 466520 --- [Thread-6] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-01-19 11:08:46.550  INFO 466520 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-19 11:08:46.552  INFO 466520 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-19 11:08:46.623  INFO 466520 --- [restartedMain] c.m.payments.PaymentsApplication         : Starting PaymentsApplication using Java 17.0.4.1 on Multicode-O4 with PID 466520 (C:\gitrepositories\neueda\spring-boot-monitoring\completed-project\payments\target\classes started by mthor in C:\gitrepositories\neueda\spring-boot-monitoring\completed-project\payments)
+2023-01-19 11:08:46.624  INFO 466520 --- [restartedMain] c.m.payments.PaymentsApplication         : No active profile set, falling back to 1 default profile: "default"
+2023-01-19 11:08:46.945  INFO 466520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-19 11:08:46.953  INFO 466520 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-01-19 11:08:47.014  INFO 466520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-19 11:08:47.015  INFO 466520 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-19 11:08:47.015  INFO 466520 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-01-19 11:08:47.029  INFO 466520 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-19 11:08:47.029  INFO 466520 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 404 ms
+2023-01-19 11:08:47.063  INFO 466520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-01-19 11:08:47.066  INFO 466520 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-01-19 11:08:47.066  INFO 466520 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:payments'
+2023-01-19 11:08:47.101  INFO 466520 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-19 11:08:47.105  INFO 466520 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-01-19 11:08:47.124  INFO 466520 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-19 11:08:47.125  INFO 466520 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-19 11:08:47.424  INFO 463304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-19 11:08:47.484  INFO 463304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interfaces.
+2023-01-19 11:08:47.859  WARN 466520 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-19 11:08:47.907  INFO 466520 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-01-19 11:08:48.215  INFO 466520 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-01-19 11:08:48.219  INFO 466520 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2023-01-19 11:08:48.235  INFO 466520 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-19 11:08:48.242  INFO 466520 --- [restartedMain] c.m.payments.PaymentsApplication         : Started PaymentsApplication in 1.64 seconds (JVM running for 204.355)
+2023-01-19 11:08:48.247  INFO 466520 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   InfoContributorAutoConfiguration#buildInfoContributor matched:
+      - @ConditionalOnEnabledInfoContributor management.info.defaults.enabled is considered true (OnEnabledInfoContributorCondition)
+      - @ConditionalOnSingleCandidate (types: org.springframework.boot.info.BuildProperties; SearchStrategy: all) found a single bean 'buildProperties' (OnBeanCondition)
+
+   InfoContributorAutoConfiguration#gitInfoContributor matched:
+      - @ConditionalOnEnabledInfoContributor management.info.defaults.enabled is considered true (OnEnabledInfoContributorCondition)
+      - @ConditionalOnSingleCandidate (types: org.springframework.boot.info.GitProperties; SearchStrategy: all) found a single bean 'gitProperties'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.info.GitInfoContributor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties matched:
+      - @ConditionalOnResource found location ${spring.info.build.location:classpath:META-INF/build-info.properties} (OnResourceCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.info.BuildProperties; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties matched:
+      - GitResource found git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.info.GitProperties; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-01-19 11:08:48.252  INFO 463304 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-19 11:08:48.299  INFO 463304 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-01-19 11:08:48.427  INFO 463304 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-19 11:08:48.716  INFO 463304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-19 11:08:48.901  INFO 463304 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-19 11:08:48.918  INFO 463304 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-01-19 11:08:49.351  INFO 463304 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-19 11:08:49.359  INFO 463304 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-19 11:08:49.507  INFO 466520 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-19 11:08:49.508  INFO 466520 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-01-19 11:08:49.510  INFO 466520 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-01-19 11:08:51.172  INFO 466520 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-19 11:08:51.597  WARN 466520 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-01-19 11:08:51.598  INFO 466520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-01-19 11:08:51.657  INFO 466520 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-01-19 11:08:53.125  WARN 463304 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-19 11:08:53.532  INFO 463304 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:payments'
+2023-01-19 11:08:53.547  INFO 463304 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-01-19 11:08:54.897  INFO 463304 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-01-19 11:08:54.958  INFO 463304 --- [main] c.m.payments.PaymentsApplicationTests    : Started PaymentsApplicationTests in 8.761 seconds (JVM running for 9.499)
+2023-01-19 11:08:55.143  INFO 463304 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-19 11:08:55.145  INFO 463304 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-19 11:08:55.147  INFO 463304 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

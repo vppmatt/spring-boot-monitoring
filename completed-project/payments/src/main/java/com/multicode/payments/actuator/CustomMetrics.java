@@ -42,8 +42,6 @@ public class CustomMetrics {
 
     public Integer getNumberOfRecordsInLast2Years() {
         LocalDate cutOff = LocalDate.now().minusYears(2);
-        System.out.println(cutOff);
-        System.out.println(repository.findAllByDateAfter(cutOff).size());
         return repository.findAllByDateAfter(cutOff).size();
     }
 
