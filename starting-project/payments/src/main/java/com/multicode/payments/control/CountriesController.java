@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/country")
+@RequestMapping("/api/country")
 public class CountriesController {
 
     @Autowired

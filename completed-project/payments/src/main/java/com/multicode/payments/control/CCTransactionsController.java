@@ -1,5 +1,6 @@
 package com.multicode.payments.control;
 
+import com.multicode.payments.actuator.CustomMetrics;
 import com.multicode.payments.domain.*;
 import com.multicode.payments.exception.*;
 import com.multicode.payments.service.*;
@@ -18,6 +19,9 @@ public class CCTransactionsController {
 
     @Autowired
     CCUtilsService service;
+
+    @Autowired
+    CustomMetrics customMetrics;
 
     @GetMapping(produces={MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
     public Object mappingFunctionForGetAllAndSearch(
@@ -54,6 +58,7 @@ public class CCTransactionsController {
     @PostMapping
     public CreditCardTransaction addTransaction(@RequestBody CreditCardTransaction newTransaction) {
         newTransaction.setDate(LocalDate.now());
+        customMetrics.recordNewTransaction();
         try {
             return service.saveTransaction(newTransaction);
         }
